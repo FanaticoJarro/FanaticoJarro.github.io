@@ -1,0 +1,263 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+body {
+	background: #f2f2f2;
+	font-family: 'Roboto', sans-serif;
+}
+
+p {
+	margin-bottom: 20px;
+	line-height: 150%;
+}
+
+main {
+	margin: 20px auto;
+	max-width: 1000px;
+	background: #fff;
+	min-height: 80vh;
+	padding: 20px;
+	border-radius: 10px;
+}
+body {
+    font-family: Arial, sans-serif;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+}
+
+
+#logo a img {
+    height: 80px;}
+
+
+#menu-navegacion {
+    margin-top: 20px;
+}
+
+#menu-navegacion nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+#menu-navegacion nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+#menu-navegacion nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#menu-navegacion nav ul li a:hover {
+    text-decoration: underline;
+}
+
+#hero {
+    background-color: #007bff;
+    color: white;
+    padding: 50px 0;
+    text-align: center;
+}
+#hero h1 {
+    font-size: 2.5em; 
+    margin-bottom: 20px;
+}
+
+#hero p {
+    font-size: 1.2em;
+    margin-bottom: 30px;
+}
+
+
+.cta-button {
+    background-color: #ffcc00; 
+    color: black;
+    padding: 15px 30px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.cta-button:hover {
+    background-color: #ffa500; 
+}
+
+#dos-columnas {
+    display: flex; 
+    align-items: center; 
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+
+.columna {
+    flex: 1;
+}
+
+
+#columna-imagen img {
+    max-width: 50%; 
+    height: auto;
+}
+
+
+#columna-contenido {
+    max-width: 600px;
+}
+
+#columna-contenido h2 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+#columna-contenido p {
+    font-size: 1em;
+    margin-bottom: 20px;
+}
+
+#columna-contenido a {
+    color: #007bff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#galeria {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    padding: 20px;
+}
+
+
+.imagen-galeria {
+    flex-basis: calc(33.333% - 10px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+.imagen-galeria img {
+    width: 50%;
+    height: auto;
+    transition: transform 0.3s ease;
+}
+
+.imagen-galeria img:hover {
+    transform: scale(1.1);
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    color: white;
+    padding: 20px;
+}
+
+
+.columna-footer {
+    flex: 1;
+    padding: 0 10px;
+}
+
+
+#logo-empresa img {
+    max-width: 100px;
+    height: auto;
+}
+
+
+.columna-footer ul {
+    list-style-type: none; 
+    padding: 0; 
+}  
+.aviso-cookies {
+	display: none;
+	background: #fff;
+	padding: 20px;
+	width: calc(100% - 40px);
+	max-width: 300px;
+	line-height: 150%;
+	border-radius: 10px;
+	position: fixed;
+	bottom: 20px;
+	left: 20px;
+	z-index: 100;
+	padding-top: 60px;
+	box-shadow: 0px 2px 20px 10px rgba(222,222,222,.25);
+	text-align: center;
+}
+
+.aviso-cookies.activo {
+	display: block;
+}
+
+.aviso-cookies .galleta {
+	max-width: 100px;
+	position: absolute;
+	top: -50px;
+	left: calc(50% - 50px);
+}
+
+.aviso-cookies .titulo,
+.aviso-cookies .parrafo {
+	margin-bottom: 15px;
+}
+  
+.aviso-cookies .boton {
+	width: 100%;
+	background: #595959;
+	border: none;
+	color: #fff;
+	font-family: 'Roboto', sans-serif;
+	text-align: center;
+	padding: 15px 20px;
+	font-weight: 700;
+	cursor: pointer;
+	transition: .3s ease all;
+	border-radius: 5px;
+	margin-bottom: 15px;
+	font-size: 14px;
+}
+
+.aviso-cookies .boton:hover {
+	background: #000;
+}
+
+.aviso-cookies .enlace {
+	color: #4DBFFF;
+	text-decoration: none;
+	font-size: 14px;
+}
+
+.aviso-cookies .enlace:hover {
+	text-decoration: underline;
+}
+
+.fondo-aviso-cookies {
+	display: none;
+	background: rgba(0,0,0,.20);
+	position: fixed;
+	z-index: 99;
+	width: 100vw;
+	height: 100vh;
+	top: 0;
+	left: 0;
+}
+
+.fondo-aviso-cookies.activo {
+	display: block;
+}

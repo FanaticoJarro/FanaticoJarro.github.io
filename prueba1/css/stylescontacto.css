@@ -1,0 +1,240 @@
+/* Estilos para el encabezado */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #333;
+    border-bottom: 1px solid #ddd;
+}
+
+/* Estilos para el logo */
+#logo img {
+    height: 60px; /* Ajusta esto según el tamaño de tu logo */
+}
+
+/* Estilos para el menú de navegación */
+#nav-menu {
+    margin-left: auto;
+}
+
+#nav-menu nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+#nav-menu nav ul li {
+    margin: 0 10px;
+}
+
+#nav-menu nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-size: 16px;
+}
+
+#nav-menu nav ul li a:hover {
+    color: #007bff; /* Cambia el color al pasar el mouse */
+}
+/* Estilos para la sección Hero */
+#hero {
+    background-image: url('ruta_imagen_hero.jpg'); /* Reemplaza con la ruta de tu imagen */
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-align: center;
+    padding: 100px 20px; /* Ajusta el padding según tus necesidades */
+}
+
+#hero h1 {
+    font-size: 2.5rem; /* Tamaño del título */
+    margin-bottom: 20px;
+}
+
+#hero p {
+    font-size: 1.2rem; /* Tamaño del texto de descripción */
+    margin-bottom: 30px;
+    max-width: 600px; /* Controla el ancho del texto */
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Estilos para el botón de llamada a la acción */
+.cta-button {
+    display: inline-block;
+    padding: 15px 30px;
+    background-color: #007bff; /* Color de fondo del botón */
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.cta-button:hover {
+    background-color: #0056b3; /* Color de fondo del botón al pasar el mouse */
+
+}
+/* Estilos para la sección en general */
+#about-us {
+    display: flex;
+    padding: 20px;
+    align-items: center; /* Alinea verticalmente el contenido de las columnas */
+    justify-content: center; /* Centra horizontalmente las columnas */
+}
+
+/* Estilos para las columnas */
+#about-us .column {
+    flex: 1; /* Asegura que ambas columnas tengan el mismo ancho */
+    margin: 10px; /* Espacio entre las columnas */
+    padding: 20px; /* Espaciado interno de cada columna */
+}
+
+/* Estilo para la imagen en la primera columna */
+#about-us .column img {
+    max-width: 100%; /* Asegura que la imagen no sobrepase el ancho de la columna */
+    height: auto; /* Mantiene la proporción de la imagen */
+}
+
+/* Estilos para el título y el texto en la segunda columna */
+#about-us h2 {
+    margin-bottom: 15px; /* Espacio debajo del título */
+}
+
+#about-us p {
+    margin-bottom: 20px; /* Espacio debajo del párrafo */
+}
+
+/* Estilo para el enlace */
+#about-us a {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007bff; /* Color de fondo */
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+#about-us a:hover {
+    background-color: #0056b3; /* Cambio de color al pasar el mouse */
+}
+
+/* Estilos para la sección de la galería */
+#gallery {
+    padding: 20px;
+    background-color: #f4f4f4; /* Color de fondo de la sección */
+    text-align: center; /* Centra las imágenes */
+}
+
+/* Estilos para la galería de imágenes */
+.image-gallery {
+    display: flex;
+    flex-wrap: wrap; /* Permite que las imágenes pasen a la siguiente línea */
+    justify-content: center; /* Centra las imágenes horizontalmente */
+    gap: 10px; /* Espacio entre las imágenes */
+}
+
+.image-gallery img {
+    width: calc(33% - 10px); /* Ancho de las imágenes - ajusta según necesidades */
+    height: auto; /* Mantiene la proporción de las imágenes */
+    border: 3px solid white; /* Borde para hacer que cada imagen destaque */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Sombra ligera para profundidad */
+}
+
+/* Estilo para cambiar el tamaño de las imágenes en pantallas más pequeñas */
+@media (max-width: 600px) {
+    .image-gallery img {
+        width: calc(50% - 10px); /* Las imágenes ocupan el 50% del ancho en pantallas pequeñas */
+    }
+}
+/* Estilos Generales del Footer */
+footer {
+    background-color: #333;
+    color: white;
+    padding: 20px 0;
+    font-size: 14px;
+
+}
+footer img {
+    width: 30px;
+    height: 30px;
+    margin: 0 10px;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-column {
+    flex: 1;
+}
+
+/* Estilos para el Logo */
+.footer-column img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Estilos para las Listas en el Footer */
+.footer-column h4 {
+    margin-bottom: 10px;
+}
+
+.footer-column ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-column ul li {
+    margin-bottom: 5px;
+}
+
+/* Estilos para los Botones de Redes Sociales */
+.social-button {
+    display: block;
+    background-color: #007bff;
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    margin-bottom: 5px;
+    text-align: center;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.social-button:hover {
+    background-color: #0056b3;
+}
+#galeria {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    padding: 20px;
+}
+
+
+.imagen-galeria {
+    flex-basis: calc(33.333% - 10px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+.imagen-galeria img {
+    width: 50%;
+    height: auto;
+    transition: transform 0.3s ease;
+}
+
+.imagen-galeria img:hover {
+    transform: scale(1.1);
+}
+.columna {
+    flex: 1;
+}

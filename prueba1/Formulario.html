@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Formulario sobre Slackware Linux</title>
+    <link rel="icon" href=ad.png>
+    <link rel="stylesheet" href="css/formulario.css">
+</head>
+<body>
+    <form id="formulario-slackware">
+        <h1>Cuestionario sobre Slackware Linux</h1>
+
+        <!-- Pregunta 1 -->
+        <div class="pregunta">
+            <p>1. ¿En qué año fue lanzado Slackware Linux?</p>
+            <input type="radio" id="opcion1-1" name="pregunta1" value="opcion1">
+            <label for="opcion1-1">1993</label><br>
+            <input type="radio" id="opcion1-2" name="pregunta1" value="opcion2">
+            <label for="opcion1-2">1995</label><br>
+            <input type="radio" id="opcion1-3" name="pregunta1" value="opcion3">
+            <label for="opcion1-3">1998</label>
+        </div>
+
+        <!-- Agrega más preguntas aquí siguiendo el mismo patrón -->
+
+        <div class="pregunta">
+            <p>2. ¿Quién es el fundador de Slackware Linux?</p>
+            <input type="radio" id="opcion2-1" name="pregunta2" value="opcion1">
+            <label for="opcion10-1"> Linus Torvalds</label><br>
+            <input type="radio" id="opcion2-2" name="pregunta2" value="opcion2">
+            <label for="opcion10-2">Richard Stallman</label><br>
+            <input type="radio" id="opcion2-3" name="pregunta2" value="opcion3">
+            <label for="opcion10-3">Patrick Volkerding</label>
+        </div>
+
+                <div class="pregunta">
+            <p>3. ¿Qué gestor de paquetes utiliza Slackware?</p>
+            <input type="radio" id="opcion3-1" name="pregunta3" value="opcion1">
+            <label for="opcion10-1">pkgtool</label><br>
+            <input type="radio" id="opcion3-2" name="pregunta3" value="opcion2">
+            <label for="opcion10-2">apt</label><br>
+            <input type="radio" id="opcion3-3" name="pregunta3" value="opcion3">
+            <label for="opcion10-3">yum</label>
+        </div>
+
+        <div class="pregunta">
+            <p>4.¿Qué comando se utiliza para instalar paquetes en Slackware?</p>
+            <input type="radio" id="opcion4-1" name="pregunta4" value="opcion1">
+            <label for="opcion10-1">dgpk</label><br>
+            <input type="radio" id="opcion4-2" name="pregunta4" value="opcion2">
+            <label for="opcion10-2">installpkg</label><br>
+            <input type="radio" id="opcion4-3" name="pregunta4" value="opcion3">
+            <label for="opcion10-3">rpm</label>
+        </div>
+        <div class="pregunta">
+            <p>5. ¿Qué entorno de escritorio viene por defecto en Slackware?</p>
+            <input type="radio" id="opcion5-1" name="pregunta5" value="opcion1">
+            <label for="opcion10-1">KDE</label><br>
+            <input type="radio" id="opcion5-2" name="pregunta5" value="opcion2">
+            <label for="opcion10-2">GNOME</label><br>
+            <input type="radio" id="opcion5-3" name="pregunta5" value="opcion3">
+            <label for="opcion10-3">Unity</label>
+        </div>
+
+        <div class="pregunta">
+            <p>6. ¿Cuál es la versión actual de Slackware? (Nota: esta pregunta puede requerir actualización según la fecha)</p>
+            <input type="radio" id="opcion6-1" name="pregunta6" value="opcion1">
+            <label for="opcion6-1">14.2</label><br>
+            <input type="radio" id="opcion6-2" name="pregunta6" value="opcion2">
+            <label for="opcion6-2">15.0</label><br>
+            <input type="radio" id="opcion6-3" name="pregunta6" value="opcion3">
+            <label for="opcion6-3">16.1</label>
+        </div>
+
+        <div class="pregunta">
+            <p>7. ¿Qué comando se usa para actualizar todos los paquetes en Slackware?</p>
+            <input type="radio" id="opcion7-1" name="pregunta7" value="opcion1">
+            <label for="opcion10-1">slackpkg upgrade-all</label><br>
+            <input type="radio" id="opcion7-2" name="pregunta7" value="opcion2">
+            <label for="opcion10-2">apt-get upgrade</label><br>
+            <input type="radio" id="opcion7-3" name="pregunta7" value="opcion3">
+            <label for="opcion10-3">yum update</label>
+        </div>
+
+        <div class="pregunta">
+            <p>8. ¿Cómo se llama el archivo de configuración del kernel en Slackware?</p>
+            <input type="radio" id="opcion8-1" name="pregunta8" value="opcion1">
+            <label for="opcion10-1">sysconfig</label><br>
+            <input type="radio" id="opcion8-2" name="pregunta8" value="opcion2">
+            <label for="opcion10-2">kernel.conf</label><br>
+            <input type="radio" id="opcion8-3" name="pregunta8" value="opcion3">
+            <label for="opcion10-3">config.h</label>
+        </div>
+
+    <button type="button" id="verificar-respuestas">Verificar Respuestas</button>
+    <div id="resultado"></div>
+    <script src="js/formulario.js"></script>
+
+    </form>
+</body>
+</html>

@@ -1,0 +1,90 @@
+html, body {
+    height: 100%; /* Establece la altura del body y html al 100% */
+    margin: 0; /* Elimina los márgenes por defecto */
+    padding: 0; /* Elimina el padding por defecto */
+}
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+h1{
+    text-align: center;
+}
+header {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1em 0;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+.contenedor {
+    display: flex; /* Activa Flexbox */
+    flex-direction: column; /* Alinea los elementos en una columna */
+    min-height: 100%; /* Altura mínima del contenedor es el 100% de la altura de la ventana */
+}   
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 5em 0;
+}
+
+footer img {
+    width: 30px;
+    height: 30px;
+    margin: 0 10px;
+}
+
+main {
+    flex-grow: 1;
+}
+
+form {
+    max-width: 500px;
+    margin: auto;
+}
+
+form label, form input, form textarea, form button {
+    display: block;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+form button {
+    background-color: blue;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: darkblue;
+}
+.contenedor-imagen {
+    display: flex;        /* Habilita flexbox */
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center;     /* Centra verticalmente */
+    height: 200px;        /* Altura del contenedor (ajustable a tus necesidades) */
+}
+
+.contenedor-imagen img {
+    max-width: 100%;      /* Asegura que la imagen no exceda el ancho del contenedor */
+    max-height: 100%;     /* Asegura que la imagen no exceda la altura del contenedor */
+}
